@@ -1,0 +1,54 @@
+
+<nav class="navbar navbar-dark bg-primary">
+    
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+          <a class="navbar-brand" routerLink="../profile" >PROFILE</a>
+        </nav>
+     
+        <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+          <a class="navbar-brand" routerLink="../people" >PEOPLE</a>
+        </nav>
+    
+        <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+          <a class="navbar-brand" routerLink="../chat" >CHAT</a>
+        </nav>
+      
+        <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+          <a class="navbar-brand" (click)="logout()" routerLink="../login" >LOGOUT</a>
+        </nav>
+        <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+          <a class="navbar-brand" (click)="logout()" routerLink="../login" ></a>
+        </nav>
+      
+      
+      <nav class="icon"><img src="./assets/images (1).png" width="250" height="100"></nav>
+    </div> 
+  </nav>
+<div class="main">
+<div class="profile"><img src="https://amanyddv-effective-cod-4pw7rjv7vq92jv47-7000.preview.app.github/profilePic/{{user.profile}}" class="rounded-circle"  width="200" height="200" ></div>
+<div class="data">
+    <h5>UserName: &nbsp;{{user.name}}</h5>
+    
+    <h5>Email: &nbsp; {{user.email}}</h5>
+    <form #pic="ngForm" (ngSubmit)="changepic(pic.value)">
+        <input type="file" class="cho"  (change)="picture($event)">
+        <button click="submit" class="btn btn-outline-success cho">Change</button><br>
+    </form>
+   
+</div>
+<div class="post">
+    <form #post="ngForm" (ngSubmit)="Post(post.value)">
+        <input type="file" class="cho" (change)="image($event)"><br>
+        <input type="text" class="msg" name="comment" placeholder=Caption_OR_Comment ngModel>
+        <button click="submit" class="btn btn-outline-success submit">Post</button>
+    </form>
+</div>
+
+<div class="posts">
+<td *ngFor="let feed of userPost" >
+    <img src="https://amanyddv-effective-cod-4pw7rjv7vq92jv47-7000.preview.app.github/profilePic/{{feed.post}}" width="330" height="330"><br>
+    <h5>Caption: {{feed.comment}}</h5>
+</td>
+</div>
+</div>

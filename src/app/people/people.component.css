@@ -1,0 +1,43 @@
+.tec1{position: absolute;
+    width: 319px;
+    height: 79px;
+    left: 259px;
+    top: 0px;
+    
+    
+    border-radius: 90px;}
+.tec2{position: absolute;
+        width: 319px;
+        height: 79px;
+        left: 578px;
+        top: 0px;
+        
+        
+        border-radius: 90px;}
+        
+.tec3{position: absolute;
+            width: 319px;
+            height: 79px;
+            left: 897px;
+            top: 0px;
+            
+            
+            border-radius: 90px;}
+.tec4{position: absolute;
+                width: 319px;
+                height: 79px;
+                left: 1216px;
+                top: 0px;
+                
+                
+                border-radius: 90px;}
+.assign{position: relative;
+    top:85px;
+    
+}
+.msgbx{
+    overflow: auto;
+    position: fixed;
+   
+ 
+}

@@ -1,0 +1,69 @@
+
+                .main{
+                    position: absolute;
+                    top: 80px;
+                    left:2px;
+                   
+                width: 2200px;
+                height: 1000px;
+                
+                background: #71dae6;
+                }
+.profile{
+    position: absolute;
+
+left: 10px;
+top: 135px;
+
+background: #71dae6;
+}
+.data{
+    position: absolute;
+
+left: 240px;
+top: 170px;
+
+background: #71dae6;
+}
+
+.posts{
+    position: absolute;
+width: 367px;
+height: 61px;
+left: 5px;
+top: 350px;
+
+background: #D9D9D9;
+}
+.icon{
+    position:fixed;
+    top:7px;
+    right:7px;
+}
+.post{
+    position: fixed;
+    right:105px;
+    height: 40px;
+    bottom:35px
+}
+.msg{
+    position: relative;
+    width:250px;
+    height: 40px;
+    border-radius: 90px;
+}
+.submit{
+    position: absolute;
+width: 100px;
+height: 40px;
+
+background: #21df6d;
+border-radius: 90px;
+}
+.cho{
+    position: relative;
+ width:250px;
+ bottom:1px;
+background: #21df6d;
+border-radius: 90px;
+}

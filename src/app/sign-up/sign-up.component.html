@@ -1,0 +1,25 @@
+<div class="desk">
+    <div class="form">
+        <form #userForm="ngForm" >
+        
+        <img class="img" [src]="img">
+        <h2 class="fw-bold mb-2 text-uppercase logo">SIGNUP</h2>
+
+        <input class="imgS" type="file" (change)="image($event)" placeholder="">
+
+        <input  class="name" type="text" name="name" placeholder="NAME" ngModel><br>
+        <div class="namel"></div>
+       
+        <input class="email" type="email" name="email" placeholder="EMAIL" ngModel><br>
+        <div class="emaill"></div>
+
+        <input class="password" type="password" name="password" placeholder="PASSWORD" ngModel><br>
+        <div class="passwordl"></div>
+
+        <button class="signUp" (click)="signUp(userForm.value)"  routerLink="../profile">SignUp</button>
+    
+    
+        </form>
+    </div>
+
+</div>

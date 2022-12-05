@@ -1,0 +1,13 @@
+<form #userForm ="ngForm">
+    <input  class="" type="text" name="email" placeholder="EMAIL" ngModel><br>
+    <div class=""></div>
+
+    <input class="" type="password" name="oldpassword" placeholder="OLD PASSWORD" ngModel><br>
+    <div class=""></div>
+    
+    <input class="" type="password" name="newpassword" placeholder="NEW PASSWORD" ngModel><br>
+    <div class=""></div>
+
+
+  <button class="" (click)="forget(userForm.value)" routerLink="../{{logi}}">Forget</button>
+  </form>

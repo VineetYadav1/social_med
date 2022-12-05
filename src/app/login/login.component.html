@@ -1,0 +1,30 @@
+
+<div class="desk">
+  <div class="form">
+    
+                <h2 class="fw-bold mb-2 text-uppercase logo">Login</h2>
+
+                <form #userForm ="ngForm">
+                  <input  class="email" type="text" name="email" placeholder="email" ngModel><br>
+                  <div class="emaill"></div>
+  
+                  <input class="password" type="password" name="password" placeholder="PASSWORD" ngModel><br>
+                  <div class="passwordl"></div>
+  
+  
+                <button class="login" (click)="login(userForm.value)" routerLink="../{{logi}}">Login</button>
+                </form>
+
+              
+                <div>
+                  <p class="forget"> <a routerLink="../forget" class="text-white-50 fw-bold">Forget</a>
+                  </p>
+                </div>
+              <div>
+                <p class="try"  >Don't have an account? <a routerLink="../signup" class="text-white-50 fw-bold">Sign Up</a>
+                </p>
+              </div>
+    </div>
+  </div>
+  
+   

@@ -1,0 +1,16 @@
+<div class="btn-group" class="d-flex justify-content-center " role="group" >
+    <button class="btn btn-outline-primary tec1" routerLink="../profile" ><h2>Profile</h2></button>
+<button class="btn btn-outline-primary tec2" routerLink="../people"><h2>People</h2></button>
+<button class="btn btn-outline-primary tec3"  routerLink="../chat" ><h2>Chat</h2></button>
+<button class="btn btn-outline-primary tec4" (click)="logout()" routerLink="../login"  ><h2>Logout</h2></button>
+</div>
+<div class="main">
+    <section *ngFor="let l of data ">
+    <div><h5>Email: &nbsp; {{l.email}}</h5></div>
+    <div class="msg">{{l.msg}}</div>
+    </section>
+</div>
+<form class="msgbx" #msg="ngForm">
+    <input type="text" name="msg"  class="msgg" ngModel >
+    <button (click)="send(msg.value)" class="send" >send</button>
+</form>

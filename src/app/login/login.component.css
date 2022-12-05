@@ -1,0 +1,93 @@
+.desk{
+
+  position: relative;
+  width: 2000px;
+  height: 1000px;
+  
+  background: #399B8F;
+
+}
+.form{
+  position: absolute;
+width: 546px;
+height: 869px;
+left: 700px;
+top: 70px;
+
+background: #155B60;
+border: 1px solid #5A1B1B;
+backdrop-filter: blur(2px);
+/* Note: backdrop-filter has minimal browser support */
+
+border-radius: 91px;
+}
+.logo{
+  position: absolute;
+
+left: 225px;
+top: 150px;
+
+
+border-radius: 60px;
+}
+.email{position: absolute;
+  width: 428px;
+  height: 44px;
+  left: 50px;
+  top: 420px;
+  
+  background: #155B60;
+  border: 0px}
+  .emaill{position: absolute;
+    width: 425px;
+    height: 0px;
+    left: 50px;
+    top: 474px;
+    
+    border: 1px solid #000000;}
+    .password{position: absolute;
+      width: 428px;
+      height: 44px;
+      left: 50px;
+      top: 538px;
+      
+      background: #155B60;
+      border: 0px}
+  .passwordl{
+      position: absolute;
+width: 425.03px;
+height: 0px;
+left: 50px;
+top: 588px;
+
+border: 1px solid #000000;
+transform: rotate(-0.67deg);
+  }
+  .login{
+    position: absolute;
+width: 239px;
+height: 49px;
+left:150px;
+top: 650px;
+
+background: #2BB090;
+border-radius: 90px;
+}
+.try{
+  position: absolute;
+width: 239px;
+height: 49px;
+left:150px;
+top: 775px;
+
+border-radius: 90px;
+}
+.forget{
+  position: absolute;
+width: 239px;
+height: 49px;
+left:240px;
+top: 750px;
+
+border-radius: 90px;
+}

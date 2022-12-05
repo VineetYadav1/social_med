@@ -1,0 +1,36 @@
+<div class="btn-group" class="d-flex justify-content-center " role="group" >
+    <button class="btn btn-outline-primary tec1" routerLink="../profile" ><h2>Profile</h2></button>
+<button class="btn btn-outline-primary tec2" routerLink="../people"><h2>People</h2></button>
+<button class="btn btn-outline-primary tec3"  routerLink="../chat" ><h2>Chat</h2></button>
+<button class="btn btn-outline-primary tec4" (click)="logout()" routerLink="../login"  ><h2>Logout</h2></button>
+</div>
+
+<div class="assign">    
+    <table class="table table-striped">
+        <thead >
+            <tr>
+                <th class="">#</th>
+                <th class="">Profile</th>
+                <th class="">Name</th>
+                <th class="">Email</th>
+                <th class=""></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let people of peopleInfo; index as i">
+                <th class="">{{ i + 1 }} </th>
+                <td class="">
+                    <img 
+                        src="https://amanyddv-sturdy-carnival-q5pqx74q7w52xqxg-7000.preview.app.github.dev/profilePic/{{people.profile}}"
+                        class="me-2" class="rounded-lg"
+                        width="50" height="50"
+                    />
+                </td>
+                <td style="text-transform:uppercase">{{people.name}}</td>
+                <td style="text-transform:uppercase">{{people.email}}</td>
+                <td><button class="btn btn-primary" ></button></td>
+            </tr>
+        </tbody>
+    </table>
+    
+</div>
